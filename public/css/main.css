@@ -1,0 +1,79 @@
+/* Seletor universal */
+
+* {
+    margin: 0;
+    padding: 0; /* Padding: preenchimento*/
+    box-sizing: border-box;
+}
+
+body {
+    
+    height: 100vh; /* vh(viewport height)*/
+    color: white;
+    background: #EBF2F5; /* 2 primeiros(r), 2 segundos (g) e 2 ultimos(b), rgb. É sistema hexadecimal, vai de 0 até F*/
+}
+
+:root { /* Seletor que pega as informações do root*/
+    font-size: 62.5%;
+}
+
+body, input, button, textarea {
+    /* font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;  */
+
+    font: 400 1.8rem/1 'Nunito', sans-serif; /* Caso não achar Nunito, coloca sans-serif*/
+    /* Agrupa todos as propriedades do font*/
+}
+
+
+
+
+
+/*
+    ANOTAÇÕES:
+
+    Cascading Style Sheet -> Folhas de estilo em cascata
+
+    Regra CSS - Cascata e especifidade:
+        Ordem de grandeza:
+        Especificidade: id
+
+        style
+
+        Os ultimos elementos da cascata são os mais fortes.
+
+    Funções: Tem () e valores dentro        
+
+        Lembrando: Se eu colocar o link CSS depois da tag style, irá sobrescrevê-lo, ficando o último elemento
+        da cascata mais forte
+
+    O body já tem uma margem(espaçamento) automático
+
+    Box model(width/height)
+        Preenchimento
+        Borda
+        Espaçamento
+
+    Unidades de medidas 'em' e 'rem'
+
+
+    Quando aplico em em um input que está dentro de uma div, por exemplo, ele irá pegar o tamanho dessa div, se eu aplico o rem,
+    ele irá para o bloco do html, ou seja, o root. Por isso rem.
+
+    No caso do body, o elemento anterior já o html, então tanto faz
+    se eu usar o em ou rem
+
+    Regras fora da caixa(block, inline)
+        display block(div, h1, p)
+        display inline(a, span, strong)
+
+    Regras para dentro da caixa(flex, grid)
+    
+    Se eu aplicar flex na caixa 'pai', todas as caixas dentro
+    irão se alinhar uma ao lado da outra independente de serem block ou
+    inline
+
+
+*/

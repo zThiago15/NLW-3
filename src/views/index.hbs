@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- Responsável pelo @media-->
+    <title>Happy</title>
+
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/page-landing.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="page-landing">
+      <div id="container">
+
+        <header>
+          <img class="animate-up" id="logo" src="/images/logo.svg" alt="Logomarca de Happy" />
+
+          <div class="location animate-up"> <!-- Apliquei 2 classes-->
+            <strong> Capital </strong> 
+            <p> São paulo </p>
+          </div>
+        </header>
+
+        <main>
+          <h1 class="animate-up">Leve felicidade para o mundo</h1>
+
+          <section class="visit">
+            <p class="animate-up">Visite orfanatos e mude o dia de muitas crianças</p>
+
+            <a href="/orphanages" title="Visite orfanatos" class="animate-up">
+              <img src="/images/arrow.svg" alt="Ir para o mapa" />
+            </a>
+          </section>
+
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    ANOTAÇÕES:
+
+    Atributos globais(pode colocar em todas as tags):
+    title, id(tem que ser único pra cada tag)
+
+    caminho relativo: do diretório raíz para algum lugar
+    caminho absoluto:
+
+    Tag com display block(div, h1, p): ocupam a linha inteira
+    Tag com display inline(strong, span, a): só ocupa a parte do conteúdo, assim outros conteúdos ficam ao lado
+
+    <p> -> parágrafo
+
+    <strong> -> Deixa o texto em negrito
+
+    <main> -> Conteúdo principal
+
+    <div> -> Bloco
+
+    <header> -> Cabeçalho
+
+    <img src="caminho da imagem" alt="Texto caso não carregue a imagem">
+
+    Meta vem de metadados que são as configurações do documento, Charset vem de conjunto de caracteres
+
+    Tags sem tag de fechamento se autofecham e só tem atributos dentro
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Faz com que o documento se adapte a difentes tamanhos de tela
+
+    NLW3 é o diretório raíz do projeto, para referenciá-lo, usamos ./
+
+    HTML
+    Hypertext
+        hipertexto (contêm links)
+
+    Markup
+        marcação de <tags>
+
+    Language
+        linguagem
+
+    Alinhamento de tag -> uma tag dentro de outra
+-->
